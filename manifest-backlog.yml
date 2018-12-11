@@ -8,5 +8,7 @@ applications:
   env:
     REGISTRATION_SERVER_ENDPOINT: http://registration-pal-pullagura.apps.chicken.pal.pivotal.io
   services:
+    -tracker-backlog-database
     - tracker-service-registry
+    - tracker-circuit-breaker-dashboard
 
